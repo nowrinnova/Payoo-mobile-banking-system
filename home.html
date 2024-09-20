@@ -10,45 +10,69 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div class="hero bg-base-200 min-h-screen">
-    <div class="hero-content flex-col lg:flex-row-reverse">
-      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <h1 class="mx-auto font-bold m-7 text-xl">Payooo MFS</h1>
-        <div class="grid grid-rows-2 grid-flow-col gap-4 p-4 overflow-hidden">
-          <button class="btn btn-lg btn-outline btn-success">Add Money</button>
-          <button class="btn btn-lg btn-outline btn-warning">Cash Out</button>
-          <button class="btn btn-lg btn-outline btn-info">Transactions</button>
-          <button class="btn btn-lg btn-outline btn-primary">Pay Bill</button>
+<body class="flex justify-center">
+
+  <div class="mockup-phone border-primary ">
+    <div class="camera"></div>
+    <div class="display">
+      <div class="artboard artboard-demo phone-3">
+        <div class="hero bg-base-200 min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="stats shadow">
+                <div class="stat">
+                  <div class="stat-title">Account Balance</div>
+                  <div id="account-balance" class="stat-value">9400</div>
+                </div>
+              </div>
+              <div class="grid grid-rows-2 grid-flow-col gap-4 p-4 overflow-hidden">
+                <button class="btn btn-lg btn-outline btn-success">Add Money</button>
+                <button class="btn btn-lg btn-outline btn-warning">Cash Out</button>
+                <button class="btn btn-lg btn-outline btn-info">Transactions</button>
+                <button class="btn btn-lg btn-outline btn-primary">Pay Bill</button>
+              </div>
+              <div class="divider"></div>
+              <!-- add money section start -->
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <h1 class="mx-auto font-bold text-xl">Add Money</h1>
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="amount-field" type="text" placeholder="Enter your Amount" class="input input-bordered"
+                      required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4-digit pin</span>
+                    </label>
+                    <input id="addNumber-pin" type="password" placeholder="Enter your pin" class="input input-bordered"
+                      required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="addMoney-btn" class="btn btn-primary text-white">Add Money</button>
+                  </div>
+                </form>
+              </div>
+              <!-- add money section end -->
+            </div>
+          </div>
         </div>
-        <div class="divider"></div>
-        <!-- add money section start -->
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form class="card-body">
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Email</span>
-              </label>
-              <input type="email" placeholder="email" class="input input-bordered" required />
-            </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Password</span>
-              </label>
-              <input type="password" placeholder="password" class="input input-bordered" required />
-              <label class="label">
-                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-              </label>
-            </div>
-            <div class="form-control mt-6">
-              <button class="btn btn-primary">Login</button>
-            </div>
-          </form>
-        </div>
-        <!-- add money section end -->
       </div>
     </div>
   </div>
+
+
+
+
+
+
+  <script src="./js/utilities.js"></script>
+  <script src="./js/addMoney.js"></script>
 </body>
 
 </html>
