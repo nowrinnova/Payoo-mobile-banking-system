@@ -1,3 +1,4 @@
+
 document.getElementById("addMoney-btn").addEventListener("click", (event) => {
   event.preventDefault();
   const amountValue = getInputFieldValueById("amount-field");

@@ -26,14 +26,14 @@
                 </div>
               </div>
               <div class="grid grid-rows-2 grid-flow-col gap-4 p-4 overflow-hidden">
-                <button class="btn btn-lg btn-outline btn-success">Add Money</button>
-                <button class="btn btn-lg btn-outline btn-warning">Cash Out</button>
+                <button id="addBtn" class="btn btn-lg btn-outline btn-success">Add Money</button>
+                <button id="cashOutBtn" class="btn btn-lg btn-outline btn-warning">Cash Out</button>
                 <button class="btn btn-lg btn-outline btn-info">Transactions</button>
                 <button class="btn btn-lg btn-outline btn-primary">Pay Bill</button>
               </div>
               <div class="divider"></div>
               <!-- add money section start -->
-              <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div id="addMoney-Section" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <h1 class="mx-auto font-bold text-xl">Add Money</h1>
                 <form class="card-body">
                   <div class="form-control">
@@ -60,32 +60,33 @@
               </div>
               <!-- add money section end -->
               <!-- cash out section start -->
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"></div>
-              <h1 class="mx-auto font-bold text-xl">Cash Out</h1>
-              <form class="card-body">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Amount</span>
-                  </label>
-                  <input id="cashOut-amount-field" type="text" placeholder="Enter your Amount"
-                    class="input input-bordered" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">4-digit pin</span>
-                  </label>
-                  <input id="cashOut-pin" type="password" placeholder="Enter your pin" class="input input-bordered"
-                    required />
-                  <label class="label">
-                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                  </label>
-                </div>
-                <div class="form-control mt-6">
-                  <button id="cashOut-btn" class="btn btn-primary text-white">Cash Out</button>
-                </div>
-              </form>
+              <div id="cashOut-Section" class=" hidden  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <h1 class="mx-auto font-bold text-xl">Cash Out</h1>
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="cashOut-amount-field" type="text" placeholder="Enter your Amount"
+                      class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4-digit pin</span>
+                    </label>
+                    <input id="cashOut-pin" type="password" placeholder="Enter your pin" class="input input-bordered"
+                      required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cashOut-btn" class="btn btn-primary text-white">Cash Out</button>
+                  </div>
+                </form>
+              </div>
+              <!-- cash out section end -->
             </div>
-            <!-- cash out section end -->
           </div>
         </div>
       </div>
@@ -94,7 +95,7 @@
   </div>
 
 
-
+  <script src="./js/feature.js"></script>
   <script src="./js/utilities.js"></script>
   <script src="./js/addMoney.js"></script>
   <script src="./js/cashOut.js"></script>

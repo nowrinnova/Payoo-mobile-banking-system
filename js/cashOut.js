@@ -1,3 +1,4 @@
+
 document.getElementById("cashOut-btn").addEventListener("click", (event) => {
   event.preventDefault();
   const amountValue = getInputFieldValueById("cashOut-amount-field");

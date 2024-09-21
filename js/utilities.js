@@ -8,3 +8,11 @@ function amountBalance(id) {
   const balanceNumber = parseFloat(balance);
   return balanceNumber;
 }
+function showSectionById(id){
+  console.log(`${id} called start`)
+  document.getElementById('addMoney-Section').classList.add('hidden');
+  document.getElementById('cashOut-Section').classList.add('hidden');
+  // document.getElementById('addMoney-Section').classList.add('hidden');
+  document.getElementById(id).classList.remove('hidden');
+  console.log(`${id} called`)
+}
