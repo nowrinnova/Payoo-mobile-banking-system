@@ -10,6 +10,11 @@ document.getElementById("cashOut-btn").addEventListener("click", (event) => {
   const updateAccountBalance=accountBalance-amountValue;
   document.getElementById('account-balance').innerText=updateAccountBalance;
   document.getElementById('cashOut-pin').value="";
+  //"transaction-section added"
+  const li= document.createElement('li');
+  li.innerText=` Cash Out ${accountBalance} taka. in your account`;
+  document.getElementById("transaction-section").appendChild(li)
+  
   }
   else{
     alert('wrong input.please fill the valid input');

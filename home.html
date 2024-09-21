@@ -28,7 +28,7 @@
               <div class="grid grid-rows-2 grid-flow-col gap-4 p-4 overflow-hidden">
                 <button id="addBtn" class="btn btn-lg btn-outline btn-success">Add Money</button>
                 <button id="cashOutBtn" class="btn btn-lg btn-outline btn-warning">Cash Out</button>
-                <button class="btn btn-lg btn-outline btn-info">Transactions</button>
+                <button id="TransactionsBtn" class="btn btn-lg btn-outline btn-info">Transactions</button>
                 <button class="btn btn-lg btn-outline btn-primary">Pay Bill</button>
               </div>
               <div class="divider"></div>
@@ -86,6 +86,15 @@
                 </form>
               </div>
               <!-- cash out section end -->
+              <!-- transaction start -->
+              <div id="transaction-section" class="hidden transaction-section text-center">
+                <h2 class="text-3xl text-center">Transaction History</h2>
+                <div id="transaction-container" class="space-y-3">
+                  <h4 class="text-center">Total Amount <span id="balance" class="text-xl"></span></h4>
+                </div>
+              </div>
+              <!-- transaction End -->
+
             </div>
           </div>
         </div>
@@ -99,6 +108,7 @@
   <script src="./js/utilities.js"></script>
   <script src="./js/addMoney.js"></script>
   <script src="./js/cashOut.js"></script>
+  <script src="./js/transactions.js"></script>
 </body>
 
 </html>
